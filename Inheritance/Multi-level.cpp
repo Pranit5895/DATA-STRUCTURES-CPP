@@ -52,4 +52,17 @@ class GrandSon : public Son  // Grandson class inherited from Son
             return GS_age;
         }
 };
+int main()
+{
+	GrandSon obj;
 
+	obj.setage();
+	obj.setage_S();
+	obj.setage_GS();
+
+	cout << "Father's age : " << obj.getage() << endl;
+    cout << "Son's age : " << obj.getage_S() << endl;
+	cout << "Grandson's age : " << obj.getage_GS() << endl;
+
+    return 0;
+}

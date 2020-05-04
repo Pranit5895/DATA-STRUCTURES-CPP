@@ -43,3 +43,13 @@ class result : public lectures, public sports    // Result class inherited from 
             cout << "\nAverage : " << average;
         }
 };
+int main()
+{
+   result obj;
+
+   obj.get();
+   obj.getsportsmarks();
+   obj.display();
+
+   return 0;
+}

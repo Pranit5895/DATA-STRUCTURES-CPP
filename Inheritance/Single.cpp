@@ -23,4 +23,11 @@ class Area : public Rectangle
         {
             return length * breadth;
         }
+}
+int main()
+{
+     Area a;
+     cout << "Area = " << a.calc() << " square meters" << endl;
+
+     return 0;
 };

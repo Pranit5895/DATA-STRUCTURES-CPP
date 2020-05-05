@@ -26,3 +26,15 @@ class Queue {
     entries_[tail_] = x;
     ++tail_, ++num_queue_elements;
   }
+  // Dequeue function
+  int Dequeue() {
+    // No elements in queue
+    if (!num_queue_elements) {
+      throw length_error("empty queue");
+    }
+    --num_queue_elements;
+    int ret = entries_[head_];
+    ++head_;
+    return ret;
+  }
+

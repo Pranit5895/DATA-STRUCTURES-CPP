@@ -64,4 +64,21 @@ class teacher : public person
 			cout << "\nQualififcation = " << qual;
 		}
 };
+int main()
+{
+	student s1;
 
+	s1.read();
+	cout << "\n************************ Displaying Student Information*************";
+
+	s1.show();
+
+	teacher t1;
+
+	t1.read();
+	cout << "\n*****************************Displaying Teacher Information************";
+
+	t1.show();
+
+	return 0;
+}

@@ -55,4 +55,39 @@ class Queue
                       cout<<"\n\nITEM DELETED: "<<item;
              }
        }
- }
+
+   }
+        // To transverse between the nodes in the Queue
+       void qtraverse()
+       {
+              if(front==-1)
+              {
+                      cout<<"\n\nQUEUE IS EMPTY\n";
+              }
+              else
+              {
+                      cout<<"\n\nQUEUE ITEMS\n";
+                      for(int i=front;i<=rear;i++)
+                      {
+                               cout<<queue[i]<<" ";
+                      }
+                      cout<<endl;
+              }
+        }
+};
+int main()
+{
+      Queue q;
+
+      q.qtraverse();
+      q.qinsert(10);
+      q.qinsert(20);
+
+      q.qtraverse();
+
+      q.qdelete();
+      q.qinsert(30);
+
+      q.qtraverse();
+      return 0;
+}

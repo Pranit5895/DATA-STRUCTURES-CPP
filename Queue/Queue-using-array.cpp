@@ -37,4 +37,56 @@ class Queue {
     ++head_;
     return ret;
   }
+size_t size() const { return num_queue_elements; }
 
+  // Check for emptiness
+  bool isEmpty() { return num_queue_elements == 0; }
+
+  // Display all elements in queue
+  void display() {
+    for (int i = head_; i < tail_; ++i) {
+      cout << entries_[i] << " ";
+    }
+    cout << endl;
+  }
+
+ private:
+  size_t head_ = 0, tail_ = 0, num_queue_elements = 0;
+  vector<int> entries_;
+};
+
+int main() {
+  // Initialize queue of size 5
+  Queue q(5);
+  // Enqueue 3 elements
+  q.Enqueue(1);
+  q.Enqueue(2);
+  q.Enqueue(3);
+  // Print size
+  cout << q.size() << "\n";
+  // Print all elements
+  q.display();
+  // Check for emptiness, and Dequeue
+  if (!q.isEmpty()) q.Dequeue();
+  // Print size
+  cout << q.size() << "\n";
+  // Print all elements
+  q.display();
+  // Enqueue 3 more elements
+  q.Enqueue(4);
+  q.Enqueue(5);
+  q.Enqueue(6);
+  // Print size
+  cout << q.size() << "\n";
+  // Print all elements
+  q.display();
+  // Enqueue one more element -> Will throw error, since maximum size exceeeded
+  /*
+  q.Enqueue(7);
+  // Print size
+  cout << q.size() << "\n";
+  // Print all elements
+  q.display();
+  */
+  return 0;
+}

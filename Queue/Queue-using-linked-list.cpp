@@ -32,4 +32,19 @@ struct Queue *createQueue()
     q->front = q->rear = NULL;
     return q;
 }
+// Function to remove a key from given queue q
+struct QNode *deQueue(struct Queue *q)
+{
+    // If queue is empty, return NULL.
+    if (q->front == NULL)
+       return NULL;
 
+    // Store previous front and move front one node ahead
+    struct QNode *temp = q->front;
+    q->front = q->front->next;
+
+    // If front becomes NULL, then change rear also as NULL
+    if (q->front == NULL)
+       q->rear = NULL;
+    return temp;
+}

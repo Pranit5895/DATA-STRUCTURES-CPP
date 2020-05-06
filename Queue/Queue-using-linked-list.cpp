@@ -48,3 +48,19 @@ struct QNode *deQueue(struct Queue *q)
        q->rear = NULL;
     return temp;
 }
+// Driver Program to test above functions
+int main()
+{
+    struct Queue *q = createQueue();
+    enQueue(q, 10);
+    enQueue(q, 20);
+    deQueue(q);
+    deQueue(q);
+    enQueue(q, 30);
+    enQueue(q, 40);
+    enQueue(q, 50);
+    struct QNode *n = deQueue(q);
+    if (n != NULL)
+      cout<<"Dequeued item is "<< n->key;
+    return 0;
+}

@@ -50,4 +50,25 @@ void Print_Stack()
         }
     }
 }
+int main()
+{
+    for(int i = 0; i < 5; i++)
+        Push(i);
 
+    Print_Stack();
+
+    for(int i = 0; i < 6; i++)
+        Pop();
+
+    Print_Stack();
+
+    return 0;
+}
+
+
+/* Output
+Top of stack is 4
+Other Elements are : 3 2 1 0
+Stack is empty
+Stack is empty
+*/

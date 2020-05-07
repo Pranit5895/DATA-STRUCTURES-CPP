@@ -14,3 +14,16 @@ void Push(int value)
     new_node -> next = TOS;
     TOS = new_node;
 }
+void Pop()
+{
+    if(TOS == NULL)
+        cout << "Stack is empty" << endl;
+    else
+    {
+        Stack *temp;
+        temp = TOS;
+        TOS = TOS -> next;
+        temp -> next = NULL;
+        delete temp;
+    }
+}

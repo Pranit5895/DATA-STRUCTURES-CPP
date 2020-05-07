@@ -50,3 +50,17 @@ void Print_Stack()
         }
     }
 }
+int main()
+{
+    for(int i = 0; i < 5; i++)
+        Push(i);
+
+    Print_Stack();
+
+    for(int i = 0; i < 6; i++)
+        Pop();
+
+    Print_Stack();
+
+    return 0;
+}

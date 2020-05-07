@@ -27,3 +27,27 @@ void Pop()
         delete temp;
     }
 }
+void Print_Stack()
+{
+    if(TOS == NULL)
+        cout << "Stack is empty" << endl;
+    else
+    {
+        cout << "Top of stack is " << TOS -> data << endl;
+
+        if(TOS -> next != NULL)
+        {
+            cout << "Other Elements are : ";
+            Stack *current = TOS -> next;
+
+            while(current)
+            {
+                cout << current -> data << " ";
+                current = current -> next;
+            }
+
+            cout << endl;
+        }
+    }
+}
+

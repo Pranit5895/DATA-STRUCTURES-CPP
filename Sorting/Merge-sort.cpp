@@ -73,3 +73,12 @@ void mergeSort(int arr[], int l, int r)
         merge(arr, l, m, r);
     }
 }
+/* Function to print an array */
+
+void printArray(int A[], int size)
+{
+    int i;
+    for (i=0; i < size; i++)
+        cout<<A[i]<<" ";
+    cout<<"\n";
+}

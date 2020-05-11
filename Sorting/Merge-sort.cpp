@@ -91,3 +91,7 @@ int main()
     printArray(arr, arr_size);
 
     mergeSort(arr, 0, arr_size - 1);
+    cout<<"\nSorted array is \n";
+    printArray(arr, arr_size);
+    return 0;
+}

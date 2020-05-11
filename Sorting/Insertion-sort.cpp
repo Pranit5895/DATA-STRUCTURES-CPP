@@ -1,3 +1,5 @@
+//CODE FOR INSERTION SORT
+
 #include<iostream>
 using namespace std;
 void display(int *array, int size) {
@@ -5,7 +7,7 @@ void display(int *array, int size) {
       cout << array[i] << " ";
    cout << endl;
 }
-void insertionSort(int *array, int size) {
+void insertionSort(int *array, int size) {    //function for insertion sorting 
    int key, j;
    for(int i = 1; i<size; i++) {
       key = array[i];//take value

@@ -1,17 +1,19 @@
+//CODE FOR SELECTION SORT
+
 #include<iostream>
 using namespace std;
-void swapping(int &a, int &b) {         
+void swapping(int &a, int &b) {     //swapping number using reference method    
    int temp;
    temp = a;
    a = b;
    b = temp;
 }
-void display(int *array, int size) {
+void display(int *array, int size) {     //display function of arrays
    for(int i = 0; i<size; i++)
       cout << array[i] << " ";
    cout << endl;
 }
-void selectionSort(int *array, int size) {
+void selectionSort(int *array, int size) {   //selection sort function 
    int i, j, imin;
    for(i = 0; i<size-1; i++) {
       imin = i;   //get index of minimum data
@@ -22,7 +24,7 @@ void selectionSort(int *array, int size) {
          swap(array[i], array[imin]);
    }
 }
-int main() {
+int main() {     //DRIVER FUNCTION
    int n;
    cout << "Enter the number of elements: ";
    cin >> n;

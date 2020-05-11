@@ -1,3 +1,5 @@
+//CODE FOR MERGE SORTING 
+
 #include<stdlib.h> 
 #include<iostream> 
 using namespace std;
@@ -95,3 +97,4 @@ int main()
     printArray(arr, arr_size);
     return 0;
 }
+//CODE ENDED HENCE COMMENTS ADDED

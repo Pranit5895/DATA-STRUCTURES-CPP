@@ -17,3 +17,12 @@ void insertionSort(int *array, int size) {
       array[j] = key;   //insert in right place
    }
 }
+int main() {
+   int n;
+   cout << "Enter the number of elements: ";
+   cin >> n;
+   int arr[n];    //create an array with given number of elements
+   cout << "Enter elements:" << endl;
+   for(int i = 0; i<n; i++) {
+      cin >> arr[i];
+   }

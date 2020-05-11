@@ -57,3 +57,13 @@ void merge(int arr[], int l, int m, int r)
         k++;
     }
 }   //function end
+void mergeSort(int arr[], int l, int r)
+{
+    if (l < r)
+    {
+        // Same as (l+r)/2, but avoids overflow for
+        // large l and h
+
+        int m = l+(r-l)/2;
+
+        // Sort first and second halves

@@ -19,3 +19,9 @@ void bubbleSort(int *array, int size) {
             swapping(array[j], array[j+1]);
             swaps = 1;
          }
+	     }
+      }
+      if(!swaps)
+         break;
+   }
+}

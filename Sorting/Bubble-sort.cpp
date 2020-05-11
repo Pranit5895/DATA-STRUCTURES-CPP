@@ -1,17 +1,19 @@
+//CODE FOR BUBBLE SORT
+
 #include<iostream>
 using namespace std;
-void swapping(int &a, int &b) {
+void swapping(int &a, int &b) {     //swapping number via reference 
    int temp;
    temp = a;
    a = b;
    b = temp;
 }
-void display(int *array, int size) {
+void display(int *array, int size) {    //display function 
    for(int i = 0; i<size; i++)
       cout << array[i] << " ";
    cout << endl;
 }
-void bubbleSort(int *array, int size) {
+void bubbleSort(int *array, int size) {     //bubble sorting 
    for(int i = 0; i<size; i++) {
       int swaps = 0;
       for(int j = 0; j<size-i-1; j++) {
@@ -25,7 +27,7 @@ void bubbleSort(int *array, int size) {
          break;
    }
 }
-int main() {
+int main() {   //driver function for implementation
    int n;
    cout << "Enter the number of elements: ";
    cin >> n;

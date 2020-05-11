@@ -14,3 +14,9 @@ void merge(int arr[], int l, int m, int r)
     int n2 =  r - m;
 
     int L[n1], R[n2];  /* create temp arrays */
+     /* Copy data to temp arrays L[] and R[] */
+
+    for (i = 0; i < n1; i++)
+        L[i] = arr[l + i];
+    for (j = 0; j < n2; j++)
+        R[j] = arr[m + 1+ j];

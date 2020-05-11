@@ -31,3 +31,9 @@ int main() {
    for(int i = 0; i<n; i++) {
       cin >> arr[i];
    }
+   cout << "Array before Sorting: ";
+   display(arr, n);
+   selectionSort(arr, n);
+   cout << "Array after Sorting: ";
+   display(arr, n);
+}

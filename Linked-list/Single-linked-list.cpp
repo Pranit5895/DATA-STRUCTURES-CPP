@@ -386,3 +386,23 @@ void single_llist::reverse()
     }
     start = ptr2;
 }
+/*
+ * Display Elements of a link list
+ */
+void single_llist::display()
+{
+    struct node *temp;
+    if (start == NULL)
+    {
+        cout<<"The List is Empty"<<endl;
+        return;
+    }
+    temp = start;
+    cout<<"Elements of list are: "<<endl;
+    while (temp != NULL)
+    {
+        cout<<temp->info<<"->";
+        temp = temp->next;
+    }
+    cout<<"NULL"<<endl;
+}

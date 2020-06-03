@@ -54,3 +54,60 @@ main()
         cout<<"8.Display Linked List"<<endl;
         cout<<"9.Reverse Linked List "<<endl;
         cout<<"10.Exit "<<endl;
+	cout<<"Enter your choice : ";
+        cin>>choice;
+        switch(choice)
+        {
+        case 1:
+            cout<<"Inserting Node at Beginning: "<<endl;
+            sl.insert_begin();
+            cout<<endl;
+            break;
+        case 2:
+            cout<<"Inserting Node at Last: "<<endl;
+            sl.insert_last();
+            cout<<endl;
+            break;
+        case 3:
+            cout<<"Inserting Node at a given position:"<<endl;
+            sl.insert_pos();
+            cout<<endl;
+            break;
+        case 4:
+            cout<<"Sort Link List: "<<endl;
+            sl.sort();
+            cout<<endl;
+            break;
+        case 5:
+            cout<<"Delete a particular node: "<<endl;
+            sl.delete_pos();
+            break;
+        case 6:
+            cout<<"Update Node Value:"<<endl;
+            sl.update();
+            cout<<endl;
+            break;
+        case 7:
+            cout<<"Search element in Link List: "<<endl;
+            sl.search();
+            cout<<endl;
+            break;
+        case 8:
+            cout<<"Display elements of link list"<<endl;
+            sl.display();
+            cout<<endl;
+            break;
+        case 9:
+            cout<<"Reverse elements of Link List"<<endl;
+            sl.reverse();
+            cout<<endl;
+            break;
+        case 10:
+            cout<<"Exiting..."<<endl;
+            exit(1);
+            break;
+        default:
+            cout<<"Wrong choice"<<endl;
+        }
+    }
+}

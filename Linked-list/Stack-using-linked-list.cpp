@@ -64,3 +64,5 @@ int main() {
          default: {
             cout<<"Invalid Choice"<<endl;
          }
+		  }
+   }while(ch!=4);

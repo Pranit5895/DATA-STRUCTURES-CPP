@@ -19,3 +19,17 @@ void pop() {
       top = top->next;
    }
 }
+void display() {
+   struct Node* ptr;
+   if(top==NULL)
+      cout<<"stack is empty";
+   else {
+      ptr = top;
+      cout<<"Stack elements are: ";
+      while (ptr != NULL) {
+         cout<< ptr->data <<" ";
+         ptr = ptr->next;
+      }
+   }
+   cout<<endl;
+}

@@ -42,3 +42,25 @@ int main() {
    do {
       cout<<"Enter choice: "<<endl;
       cin>>ch;
+      switch(ch) {
+         case 1: {
+            cout<<"Enter value to be pushed:"<<endl;
+            cin>>val;
+            push(val);
+            break;
+         }
+         case 2: {
+            pop();
+            break;
+         }
+         case 3: {
+            display();
+            break;
+         }
+         case 4: {
+            cout<<"Exit"<<endl;
+            break;
+         }
+         default: {
+            cout<<"Invalid Choice"<<endl;
+         }

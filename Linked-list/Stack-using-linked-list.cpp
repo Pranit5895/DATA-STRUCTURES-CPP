@@ -33,3 +33,8 @@ void display() {
    }
    cout<<endl;
 }
+int main() {
+   int ch, val;
+   cout<<"1) Push in stack"<<endl;
+   cout<<"2) Pop from stack"<<endl;
+   cout<<"3) Display stack"<<endl;

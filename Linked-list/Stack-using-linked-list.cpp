@@ -11,3 +11,11 @@ void push(int val) {
    newnode->next = top;
    top = newnode;
 }
+void pop() {
+   if(top==NULL)
+      cout<<"Stack Underflow"<<endl;
+   else {
+      cout<<"The popped element is "<< top->data <<endl;
+      top = top->next;
+   }
+}

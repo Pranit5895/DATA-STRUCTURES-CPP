@@ -27,3 +27,24 @@ void insert(){
 	queue[rear] = item;
 	printf("\nInserted");
 }
+
+void deleteQ(){
+	if(front == -1 || front > rear){
+		printf("\nNothing to delete");
+		return;
+	}
+
+	else{
+
+	if(front == rear){
+		front = -1;
+		rear = -1;
+	}
+
+	else{
+		front += 1;
+	}
+
+	printf("\nDeleted");
+}
+}

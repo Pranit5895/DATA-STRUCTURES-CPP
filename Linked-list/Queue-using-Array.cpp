@@ -55,3 +55,33 @@ void display(){
 		printf("%d ", queue[i]);
 	}
 }
+
+int main ()
+{
+    int choice;
+    while(choice != 4)
+    {
+        printf("\n*************************Main Menu*****************************\n");
+        printf("\n=================================================================\n");
+        printf("\n1.insert an element\n2.Delete an element\n3.Display the queue\n4.Exit\n");
+        printf("\nEnter your choice ?");
+        scanf("%d",&choice);
+        switch(choice)
+        {
+            case 1:
+            insert();
+            break;
+            case 2:
+            deleteQ();
+            break;
+            case 3:
+            display();
+            break;
+            case 4:
+            exit(0);
+            break;
+            default:
+            printf("\nEnter valid choice??\n");
+        }
+    }
+}

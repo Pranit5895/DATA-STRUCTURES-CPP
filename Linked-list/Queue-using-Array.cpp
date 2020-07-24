@@ -48,3 +48,10 @@ void deleteQ(){
 	printf("\nDeleted");
 }
 }
+
+void display(){
+	int i;
+	for(i = front; i<=rear; i++){
+		printf("%d ", queue[i]);
+	}
+}

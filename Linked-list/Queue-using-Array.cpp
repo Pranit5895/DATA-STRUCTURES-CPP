@@ -1,11 +1,13 @@
+//CPP PROGRAM TO IMPLEMENT QUEUE USING LINKED LIST
+
 #include<stdio.h>   
 #include<stdlib.h>  
 #define maxsize 5
 
-int front = -1, rear = -1;
+int front = -1, rear = -1;   //GLOBAL VARIABLES
 int queue[maxsize];
 
-void insert(){
+void insert(){      //FUNCTION TO INSERT VALUES IN AN ARRAY
 
 	int item;
 	printf("\nEnter the item: ");
@@ -28,7 +30,7 @@ void insert(){
 	printf("\nInserted");
 }
 
-void deleteQ(){
+void deleteQ(){          //FUNCTION TO DELETE VALUES FROM AN ARRAY
 	if(front == -1 || front > rear){
 		printf("\nNothing to delete");
 		return;
@@ -49,14 +51,14 @@ void deleteQ(){
 }
 }
 
-void display(){
+void display(){       //FUNCTION TO DISPLAY COMPLETE ARRAY
 	int i;
 	for(i = front; i<=rear; i++){
 		printf("%d ", queue[i]);
 	}
 }
 
-int main ()
+int main ()      //DRIVER CODE
 {
     int choice;
     while(choice != 4)

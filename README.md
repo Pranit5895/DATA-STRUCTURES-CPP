@@ -1,3 +1,3 @@
 # DATA-STRUCTURES-CPP
 
-Data Structures codes for C++ 
+All Data Structures codes for C++ and C Language

@@ -1,4 +1,4 @@
-Recursion
+# Recursion
 Recursive Function : Function which is calling itself, then it is termed as a recursive function. There must be some base condition that will terminate recursion.
 
 returnType function (parameters) {
@@ -11,12 +11,12 @@ returnType function (parameters) {
 }
 Recursive functions are traced in form of a tree.
 Recursive Functions are like rubber-bands, if we strech a rubber band, on releasing, it will come back.
-Stack is utilised in Recursion.
+# Stack is utilised in Recursion.
 
 T(n) = 1           if n=0
        T(n-1)+1    if n>0
 
-Time Complexity?
+# Time Complexity?
 
 T(n) = T(n-1) + 1
      = T(n-2) + 1 + 1
@@ -31,10 +31,10 @@ T(n) = T(n-1) + 1
 So, the time complexity will be O(n).
 Have a look at code here.
 
-Static Variables in Recursion
+# Static Variables in Recursion
 Static variables are allocated memory for once only so the same value is achieved after the calling is complete.
 
-Global Variables in Recursion
+# Global Variables in Recursion
 Global variables and Static Variables behave similarly in Recursion.
 
 ** Have a look at code here.**

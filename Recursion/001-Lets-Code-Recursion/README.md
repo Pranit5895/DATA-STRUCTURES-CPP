@@ -6,12 +6,12 @@ Loop v/s Tail Recursion
 Tail recursion can be easily converted to a loop.
 Tail Recursion
 
-* void fun(int n) {
-*    if(n>0) {
-*        printf("%d", n);
-*        fun(n-1);
-*    }
-* }
+#void fun(int n) {
+#      if(n>0) {
+#        printf("%d", n);
+#        fun(n-1);
+#    }
+#}
 Time Complexity: O(n)
 
 Space Complexity: O(n)
